@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
- * main returns an integer
- * puts prints the required message
+ * main - entry point
+ *
+ * return: returns int 0
  */
 int main(void)
 {
