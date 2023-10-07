@@ -8,17 +8,17 @@ int main(void)
 {
 	int i;
 
-	for (i = 0 ; i < 10 ; i++)
-	{
-		if (i == 9)
-		{
-			printf("%d", i);
-		}
-		else
-		{
-			printf("%d, ", i);
-		}
+	for (i = 48 ; i < 58 ; i++)
+	{	
+		putchar(i);
+
+			if (i < 58)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
