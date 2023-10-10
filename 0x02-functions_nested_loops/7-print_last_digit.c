@@ -1,14 +1,8 @@
 #include "main.h"
 /**
- * print_last_digit - prints the last digit of a number
- * @x: number entered
- *
- * Return: int
- */
-
-/**
  * _abs - prints absolute value of int
  *@x: int input
+ *
  * Return: int
  */
 int _abs(int x)
@@ -23,6 +17,12 @@ int _abs(int x)
 	}
 }
 
+/**
+ * print_last_digit - prints the last digit of a number
+ * @x: number entered
+ *
+ * Return: int
+ */
 int print_last_digit(int x)
 {
 	int i;
