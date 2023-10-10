@@ -2,7 +2,9 @@
 /**
  *print_last_digit - prints the last digit of a number
  *@x: number entered
+ *
  *_abs - gets absolute value
+ *
  * Return: int
  */
 int _abs(int x)
