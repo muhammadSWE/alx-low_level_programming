@@ -4,6 +4,18 @@
  *@x: number entered
  * Return: int
  */
+int _abs(int x)
+{
+	if (x < 0)
+	{
+		return (-x);
+	}
+	else
+	{
+		return (x);
+	}
+}
+
 int print_last_digit(int x)
 {
 	int i;
