@@ -6,23 +6,22 @@
   */
 int main(void)
 {
-	long long i;
-	long long fib[50];
-	fib [0] = 1;
-	fib [1] = 2;
+	int i;
+	unsigned long fib1 = 0, fib2 = 1, fib3;
 
-	for (i = 2 ; i < 50 ; i++)
+	for (i = 0; i < 50; i++)
 	{
-		fib [i] = fib [i - 1] + fib [i - 2];
-	}
-	for (i = 0 ; i < 50 ; i++)
-        {
-		printf("%lld", fib [i]);
-		if (i != 49)
+		fib3 = fib1 + fib2;
+		printf("%lu", fib3);
+
+		fib1 = fib2;
+		fib2 = fib3;
+
+		if (count != 49)
 		{
 			printf(", ");
 		}
-        }
+	}
 	printf("\n");
 	return (0);
 }
