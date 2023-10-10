@@ -7,7 +7,7 @@
  */
 void print_alphabet_x10(void)
 {
-	int i;
+	int i, j;
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 	int stringlength = strlen(alpha);
 
