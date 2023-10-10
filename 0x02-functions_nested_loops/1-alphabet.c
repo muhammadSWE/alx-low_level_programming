@@ -7,8 +7,11 @@
  */
 void print_alphabet(void)
 {
+	int i;
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
-	for (int i = 0; i < strlen(alpha); i++)
+	int stringlength = strlen(alpha);
+
+	for (i = 0; i < stringlength; i++)
 	{
 		putchar(alpha[i]);
 	}
