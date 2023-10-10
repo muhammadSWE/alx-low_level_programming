@@ -8,42 +8,44 @@
 void print_times_table(int n)
 {
 	int digit, multiplier, result;
-
-	for (digit = 0; digit < n + 1; digit++)
+	
+	if (n >= 0 && n <= 15)
 	{
-		for (multiplier = 0; multiplier < n + 1; multiplier++)
+		for (digit = 0; digit < n + 1; digit++)
 		{
-			result = digit * multiplier;
-			if (multiplier == 0)
+			for (multiplier = 0; multiplier < n + 1; multiplier++)
 			{
-				_putchar(result + 48);
+				result = digit * multiplier;
+				if (multiplier == 0)
+				{
+					_putchar(result + 48);
+				}
+				else if (result / 10 == 0 && multiplier != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar (result + 48);
+				}
+				else if ((result / 10 > 0) && (result / 10 < 10))
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((result / 10) + 48);
+					_putchar((result % 10) + 48);
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar((result / 100) + 48);
+					_putchar((result / 10 % 10) + 48);
+					_putchar((result % 10) + 48);
+				}
+				if (multiplier != n)
+				{
+					_putchar(',');
+				}
 			}
-			else if (result / 10 == 0 && multiplier != 0)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar (result + 48);
-			}
-			else if ((result / 10 > 0) && (result / 10 < 10))
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar((result / 10) + 48);
-				_putchar((result % 10) + 48);
-			}
-			else
-			{
-				_putchar(' ');
-				_putchar((result / 100) + 48);
-				_putchar((result / 10 % 10) + 48);
-				_putchar((result % 10) + 48);
-			}
-			if (multiplier != n)
-			{
-				_putchar(',');
-			}
-		}
-		_putchar('\n');
+		}	_putchar('\n');
 	}
 }
