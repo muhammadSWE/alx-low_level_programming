@@ -10,7 +10,7 @@ void print_times_table(int n)
 	int digit, multiplier, result;
 
 	if (n >= 0 && n <= 15)
-	{	
+	{
 		for (digit = 0; digit < n + 1; digit++)
 		{
 			for (multiplier = 0; multiplier < n + 1; multiplier++)
