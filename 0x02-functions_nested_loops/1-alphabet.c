@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "main.h"
+#include <string.h>
 /**
  * main - entry point
  *
@@ -6,7 +7,11 @@
  */
 void print_alphabet(void)
 {
-	putchar("abcdefghijklmnopqrstuvwxyz");
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+	for (int i = 0; i < strlen(alpha); i++)
+	{
+		putchar(alpha[i]);
+	}
 	return;
 }
 int main(void)
