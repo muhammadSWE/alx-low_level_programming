@@ -13,22 +13,27 @@ void times_table(void)
 		for (multiplier = 0; multiplier < 10; multiplier++)
 		{
 			result = digit * multiplier;
-
-			if ((result / 10) != 0)
+			if (multiplier == 0)
 			{
-				_putchar((result / 10) + 48);
-				_putchar((result % 10) + 48);
+				_putchar(result + 48);
+			}
+			else if (result/10 == 0 && multiplier !=0)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar (result + 48);
 			}
 			else
 			{
-				_putchar((result % 10) + 48);	
+				_putchar(' ');
+				_putchar((result / 10) +48);
+				_putchar((result % 10) +48);
 			}
 			if (multiplier != 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 			}
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
