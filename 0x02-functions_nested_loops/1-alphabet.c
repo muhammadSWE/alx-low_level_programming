@@ -1,9 +1,9 @@
 #include "main.h"
 #include <string.h>
 /**
- * main - entry point
+ * print_alphabet - prints alphabet using _putchar
  *
- * Return: 0
+ * Return: void
  */
 void print_alphabet(void)
 {
