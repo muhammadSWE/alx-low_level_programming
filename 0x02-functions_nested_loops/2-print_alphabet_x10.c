@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * print_alphabet - prints alphabet using _putchar
+ * print_alphabet_x10 - prints alphabet using _putchar 10 times
  *
  * Return: void
  */
