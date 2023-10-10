@@ -17,7 +17,7 @@ void times_table(void)
 			{
 				_putchar(result + 48);
 			}
-			else if (result/10 == 0 && multiplier !=0)
+			else if (result / 10 == 0 && multiplier != 0)
 			{
 				_putchar(' ');
 				_putchar(' ');
@@ -26,8 +26,8 @@ void times_table(void)
 			else
 			{
 				_putchar(' ');
-				_putchar((result / 10) +48);
-				_putchar((result % 10) +48);
+				_putchar((result / 10) + 48);
+				_putchar((result % 10) + 48);
 			}
 			if (multiplier != 9)
 			{
