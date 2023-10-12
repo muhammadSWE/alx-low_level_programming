@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * fizzbuzz - fizzbuzz interview test
+ * main - fizzbuzz interview test
  *
- * Return: void
+ * Return: 0
  */
-void fizzbuzz(void)
+int main(void)
 {
 	int i;
 	
@@ -28,4 +28,5 @@ void fizzbuzz(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
