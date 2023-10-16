@@ -11,14 +11,13 @@ int _atoi(char *s)
 
 	int negativecount= 0;
 
-	while (*s && (*s < '0' || *s > '9'))
-	{
-		++s;
-	}
-
 	while (*s == '-')
 	{
 		negativecount++;
+		++s;
+	}
+	while (*s && (*s < '0' || *s > '9'))
+	{
 		++s;
 	}
 
