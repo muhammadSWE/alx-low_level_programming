@@ -10,28 +10,10 @@ char *_strcpy(char *dest, char *src)
 {
 	int i;
 
-	int len = _strlen(src);
-
-	for (i = 0; i < len; i++)
+	for (i = 0; src[i] != '\0'; i++)
 	{
 		dest[i] = src[i];
 	}
+	dest [i] = '\0';
 	return (dest);
-}
-/**
-  *_strlen - gets string length
-  *@s: string parameter
-  *
-  *Return: string length
-  */
-int _strlen(char *s)
-{
-	int i;
-	int len = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		len++;
-	}
-	return (len);
 }
