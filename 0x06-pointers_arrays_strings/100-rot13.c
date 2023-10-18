@@ -1,23 +1,23 @@
 #include "main.h"
 /**
   * *rot13 - encodes a string using rot13
-  *@*s: string
+  *@s: string
   *
   *Return: encoded string
   */
 char *rot13(char *s)
 {
 	int i, j;
-	char preEncode[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
-	char postEncode[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	char a2m[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char n2z[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; j < 26; j++)
+		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == PreEncode[j])
+			if (s[i] == a2m[j])
 			{
-				s[i] = postEncode[j];
+				s[i] = n2z[j];
 			}
 		}
 	}
