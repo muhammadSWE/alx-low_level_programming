@@ -39,39 +39,27 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	return (r);
 }
 /**
-  *rev_string - reverse a string
+  *rev_string - reverse string
   *@s: string parameter
   *
   *Return: void
   */
 void rev_string(char *s)
 {
-	int i;
-	char tmp;
+	int i = 0;
+	int j = 0;
+	char temp;
 
-	int len = _strlen(s);
-
-	for (i = 0; i < len / 2; i++)
+	while (*(s + i) != '\0')
 	{
-		tmp = s[i];
-		s[i] = s[len - 1 - i];
-		s[len - 1 - i] = tmp;
+		i++;
 	}
-}
-/**
-  *_strlen - gets string length
-  *@s: string parameter
-  *
-  *Return: string length
-  */
-int _strlen(char *s)
-{
-	int i;
-	int len = 0;
+	i--;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (j = 0; j < i; j++, i--)
 	{
-		len++;
+		temp = *(s + j);
+		*(s + j) = *(s + i);
+		*(s + i) = temp;
 	}
-	return (len);
 }
