@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-  * *_strcmp  - compare two strings
-  *@*s1: string parameter
-  *@*s2: string parameter
-  *
-  *Return: int result
-  */
+ * *_strcmp  - compare two strings
+ *@s1: string parameter
+ *@s2: string parameter
+ *
+ *Return: int result
+ */
 int _strcmp(char *s1, char *s2)
 {
 	int i;
@@ -17,11 +17,11 @@ int _strcmp(char *s1, char *s2)
 		{
 			output = s1[i] - s2[i];
 			return (output);
-			break;
 		}
 		else
 		{
-			return (0);
+			continue;
 		}
 	}
+	return (0);
 }
