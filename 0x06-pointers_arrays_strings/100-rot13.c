@@ -18,6 +18,7 @@ char *rot13(char *s)
 			if (s[i] == a2m[j])
 			{
 				s[i] = n2z[j];
+				break;
 			}
 		}
 	}
