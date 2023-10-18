@@ -8,33 +8,16 @@
   */
 char *_strcat(char *dest, char *src)
 {
-	int lenDest = _strlen(dest);
-	int lenSrc = _strlen(src);
 	int i;
 	int j = 0;
 
-	for (i = lenDest; i < lenDest + lenSrc; i++)
+	for (i = 0; dest[i] != '\0'; i++);
+	for (j = 0; src[j] != '\0'; j++)
 	{
 		dest[i] = src[j];
-		j++;
+		i++;
 	}
-	dest[lenDest + lenSrc] = '\0';
+		
+	dest[i] = '\0';
 	return (dest);
-}
-/**
-  *_strlen - gets string length
-  *@s: string parameter
-  *
-  *Return: string length
-  */
-int _strlen(char *s)
-{
-	int i;
-	int len = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		len++;
-	}
-	return (len);
 }
