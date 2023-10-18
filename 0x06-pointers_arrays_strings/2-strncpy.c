@@ -1,8 +1,8 @@
 #include "main.h"
 /**
   * *_strncpy  - copies a string
-  *@*dest: string parameter
-  *@*src: string parameter
+  *@dest: string parameter
+  *@src: string parameter
   *@n: bytes used from source
   *
   *Return: new string dest
