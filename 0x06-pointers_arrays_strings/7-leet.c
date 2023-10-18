@@ -15,7 +15,7 @@ char *leet(char *s)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (s[i] == PreEncode[j])
+			if (s[i] == preEncode[j])
 			{
 				s[i] = postEncode[j];
 			}
