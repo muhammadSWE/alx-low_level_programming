@@ -19,14 +19,14 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				sum1 += a[i][j];
+				sum1 += *(a + i * size + j);
 			}
 
 			if (j == size - 1 - i)
 			{
-				sum2 += a[i][j];
+				sum2 += *(a + i * size + j);
 			}
 		}
 	}
-	printf("%d, %d", sum1, sum2);
+	printf("%d, %d\n", sum1, sum2);
 }
