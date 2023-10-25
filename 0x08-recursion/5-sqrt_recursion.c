@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (actual_sqrt_recursion(n, 0));
+	return (squareroot(n, 0));
 }
 /**
  *squareroot - recurses natural square root
@@ -23,13 +23,13 @@ int _sqrt_recursion(int n)
  */
 int squareroot(int x, int i)
 {
-	if (i * i > n)
+	if (i * i > x)
 	{
 		return (-1);
 	}
-	if (i * i == n)
+	if (i * i == x)
 	{
 		return (i);
 	}
-	return (actual_sqrt_recursion(n, i + 1));
+	return (squareroot(x, i + 1));
 }
