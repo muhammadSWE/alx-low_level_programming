@@ -1,11 +1,14 @@
-#include "main.h"
 #include <stdio.h>
 /**
- *printname - prints name followed by a new line
+ *main - prints program name followed by a new line
+ *@argc: number of args
+ *@argv: array of args
  *
- *Return: void
+ *Return: 0
  */
-void printname(void)
+int main(int argc, char *argv[])
 {
-	printf("%s", argv[0]);
+	printf("%s\n", *argv);
+
+	return (0);
 }
