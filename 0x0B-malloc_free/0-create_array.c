@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *create_array - prints a string in reverse
+ * *create_array - create array of chars
  *@size: array size
  *@c: initialize character
  *
