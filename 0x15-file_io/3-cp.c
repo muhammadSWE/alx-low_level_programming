@@ -24,14 +24,14 @@ int main(int argc, char *argv[])
 	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		if (from == -1 || r == -1)
+		if (from == -1 || rd == -1)
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", argv[1]);
 			free(buf);
 			exit(98);
 		}
-		wrt = write(to, buffer, rd);
+		wrt = write(to, buf, rd);
 		if (to == -1 || wrt == -1)
 		{
 			dprintf(STDERR_FILENO,
