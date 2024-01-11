@@ -12,8 +12,8 @@ const dlistint_t *tmp = h;
 
 while (tmp != NULL)
 {
-    tmp = tmp->next;
-    i++;
+	tmp = tmp->next;
+	i++;
 }
 return (i);
 }
