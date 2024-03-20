@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """measure an island's perimeter"""
 
+
 def island_perimeter(grid):
     """Return the perimiter of an island
     Args:
